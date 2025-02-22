@@ -31,9 +31,9 @@
                             Videos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">What is Phishing</a></li>
-                            <li><a class="dropdown-item" href="#">How can it affect you</a></li>
-                            <li><a class="dropdown-item" href="#">Protect yourself</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/embed/9TRR6lHviQc">What is Phishing</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/embed/o0btqyGWIQw">Examples</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/embed/VzKsW54_DaQ">Protect yourself</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Learn Cybersecurity</a></li>
                         </ul>
@@ -98,6 +98,8 @@
     <section class="container my-5">
         <h2 class="text-center text-light">Common Types of Phishing Attacks</h2>
         <div class="accordion" id="phishingAccordion">
+
+            <!-- Email Phishing -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
@@ -106,11 +108,13 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
-                        This is the most common form of phishing, where attackers send fraudulent emails that appear to be from legitimate companies, tricking users into clicking malicious links or sharing sensitive data.
+                        This is the most common form of phishing, where attackers send fraudulent emails that appear to be from legitimate companies, 
+                        tricking users into clicking malicious links or sharing sensitive data.
                     </div>
                 </div>
             </div>
 
+            <!-- Spear Phishing -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
@@ -124,6 +128,7 @@
                 </div>
             </div>
 
+            <!-- Smishing (SMS Phishing) -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
@@ -132,20 +137,36 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                        Attackers send fraudulent text messages that appear to come from trusted sources, urging victims to click malicious links or provide personal information.
+                        Attackers send fraudulent text messages that appear to come from trusted sources, urging victims to click malicious links 
+                        or provide personal information.
                     </div>
                 </div>
             </div>
+
+            <!-- Vishing (Voice Phishing) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        📞 Vishing (Voice Phishing)
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        In this type of attack, scammers call victims pretending to be from banks, government agencies, or tech support to trick 
+                        them into revealing confidential details.
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-
     <!-- Newsletter Section -->
     <section class="newsletter text-light text-center py-4">
         <div class="container">
             <h2>Stay Updated!</h2>
             <p>Subscribe to our newsletter (Get weekly news)</p>
             <form class="d-flex justify-content-center">
-                <input type="email" class=" text-light w-50 me-2" placeholder="Enter email" required>
+                <input type="email" class="text-light w-50 me-2" placeholder="Enter email" required>
                 <button type="submit" class="btn btn-primary">Subscribe</button>
             </form>
         </div>

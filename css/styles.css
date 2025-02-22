@@ -1,8 +1,13 @@
-body, .container {
+/* ===============================
+   🔹 Global Styles
+   =============================== */
+   body, .container {
     background: #000000 !important; /* Override Bootstrap's default white */
 }
 
-/* Hero Section - Dark Background */
+/* ===============================
+   🔹 Hero Section
+   =============================== */
 header {
     background: #000000 !important; /* Make it black */
     text-align: center;
@@ -10,102 +15,103 @@ header {
     box-shadow: 0px 0px 20px #00f2ff;
     border-bottom: 2px solid #00f2ff; /* Add a subtle cyberpunk effect */
 }
-header h1 {
+
+header h1, header p, body h2, body p {
     color: #ffffff;
     font-size: 2.5rem;
     text-shadow: 0px 0px 10px #00f2ff;
 }
 
-header p {
-    color: #ffffff;
-    font-size: 2.5rem;
-    text-shadow: 0px 0px 10px #00f2ff;
-}
-
-body h2 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    text-shadow: 0px 0px 10px #00f2ff;
-}
-
-body p {
-    color: #ffffff;
-    font-size: 2.5rem;
-    text-shadow: 0px 0px 10px #00f2ff;
-}
-
-/* Cyberpunk Accordion Styling */
-.accordion {
-    background: rgba(0, 0, 0, 0.9) !important;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 15px #00f2ff;
-}
-.accordion-button {
-    color: #00f2ff !important;
-    background: rgba(15, 15, 30, 0.9) !important;
-    border: 1px solid #00f2ff !important;
-    box-shadow: 0px 0px 10px #00ff87;
-}
-.accordion-button:hover {
-    background: #ff007f !important;
-    color: white !important;
-    box-shadow: 0px 0px 15px #ff007f;
-}
-.accordion-body {
-    background: rgba(10, 15, 30, 0.9) !important;
-    color: #d1d1d1 !important;
-    border: 1px solid #00f2ff !important;
-}
-
-/* Navbar - Dark with Neon Glow */
+/* ===============================
+   🔹 Navbar Styling
+   =============================== */
 .navbar {
     background: rgba(0, 0, 0, 0.9); /* Dark Transparent */
     box-shadow: 0px 0px 15px #00f2ff;
     border-bottom: 2px solid #00f2ff;
 }
+
 .navbar-brand, .nav-link {
     color: #00f2ff !important;
     transition: color 0.3s ease;
 }
+
 .navbar-brand:hover, .nav-link:hover {
     color: #ff007f !important;
 }
 
-/* Buttons */
+/* ===============================
+   🔹 Buttons
+   =============================== */
 .btn-primary {
     background: #00f2ff;
     border: none;
     box-shadow: 0px 0px 15px #00f2ff;
     transition: 0.3s ease;
 }
+
 .btn-primary:hover {
     background: #ff007f;
     box-shadow: 0px 0px 20px #ff007f;
 }
 
-/* Cards */
+/* ===============================
+   🔹 Cards
+   =============================== */
 .card {
     background: rgba(15, 15, 30, 0.9);
     border: 1px solid #00f2ff;
     box-shadow: 0px 0px 15px #00f2ff;
     transition: 0.3s;
 }
+
 .card:hover {
     box-shadow: 0px 0px 25px #ff007f;
 }
 
-/* Fix Card Description Size */
+/* 🔹 Fix Card Description Size */
 .card-text {
     font-size: 1rem !important; /* Make text smaller */
     color: #d1d1d1 !important; /* Ensure readability */
 }
+
 .card-title {
     font-size: 1.2rem !important; /* Keep title a bit larger */
     color: #00f2ff !important;
 }
 
-/* Newsletter Section - Dark Theme (Fixing Blue Background) */
+/* ===============================
+   🔹 Accordion Styling (Cyberpunk)
+   =============================== */
+.accordion {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px #00f2ff;
+}
+
+.accordion-button {
+    color: #00f2ff !important;
+    background: rgba(15, 15, 30, 0.9) !important;
+    border: 1px solid #00f2ff !important;
+    box-shadow: 0px 0px 10px #00ff87;
+}
+
+.accordion-button:hover {
+    background: #ff007f !important;
+    color: white !important;
+    box-shadow: 0px 0px 15px #ff007f;
+}
+
+.accordion-body {
+    background: rgba(10, 15, 30, 0.9) !important;
+    color: #d1d1d1 !important;
+    border: 1px solid #00f2ff !important;
+}
+
+/* ===============================
+   🔹 Newsletter Section (Fixing Blue Background)
+   =============================== */
 .newsletter {
     background: rgba(0, 0, 0, 0.9); /* Dark Instead of Bright Blue */
     padding: 40px;
@@ -113,26 +119,32 @@ body p {
     box-shadow: 0px 0px 15px #00f2ff;
     border-top: 2px solid #00f2ff;
 }
+
 .newsletter h2 {
     color: #00f2ff;
     text-shadow: 0px 0px 10px #00f2ff;
 }
+
 .newsletter input {
     border: 2px solid #00f2ff;
     background: rgba(0, 0, 0, 0.8);
     color: #ffffff;
 }
+
 .newsletter button {
     background: #00f2ff;
     border: none;
     box-shadow: 0px 0px 10px #00f2ff;
 }
+
 .newsletter button:hover {
     background: #ff007f;
     box-shadow: 0px 0px 15px #ff007f;
 }
 
-/* Contact Section - Fix Font Size and Glow */
+/* ===============================
+   🔹 Contact Section Fixes
+   =============================== */
 .contact-info h2 {
     font-size: 1.5rem !important; /* Reduce title size */
     text-shadow: 0px 0px 5px #00f2ff; /* Subtle glow */
@@ -154,7 +166,7 @@ body p {
     text-shadow: 0px 0px 10px #ff007f;
 }
 
-/* Fix Button Sizes */
+/* 🔹 Fix Button Sizes */
 .contact-info .btn {
     font-size: 0.9rem !important; /* Smaller buttons */
     padding: 8px 15px !important;
@@ -170,7 +182,10 @@ body p {
     color: black;
     box-shadow: 0px 0px 15px #ff007f;
 }
-/* Footer - Fixing Size & Styling */
+
+/* ===============================
+   🔹 Footer Styling Fixes
+   =============================== */
 footer {
     background: rgba(0, 0, 0, 0.9) !important;
     text-shadow: 0px 0px 10px #00f2ff;
@@ -179,6 +194,7 @@ footer {
     font-size: 1rem !important; /* Prevents inheriting large text */
     text-align: center;
 }
+
 footer p, footer a {
     font-size: 1rem !important; /* Ensure consistent size */
     color: #00f2ff !important;
