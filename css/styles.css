@@ -1,19 +1,15 @@
-/* ===============================
-   🔹 Global Styles
-   =============================== */
-   body, .container {
-    background: #000000 !important; /* Override Bootstrap's default white */
+/* Fondo y ajustes globales */
+body, .container {
+    background: #000000 !important; 
 }
 
-/* ===============================
-   🔹 Hero Section
-   =============================== */
+/* Hero Section */
 header {
-    background: #000000 !important; /* Make it black */
+    background: #000000 !important; 
     text-align: center;
     padding: 50px 0;
     box-shadow: 0px 0px 20px #00f2ff;
-    border-bottom: 2px solid #00f2ff; /* Add a subtle cyberpunk effect */
+    border-bottom: 2px solid #00f2ff; 
 }
 
 header h1, header p, body h2, body p {
@@ -22,11 +18,9 @@ header h1, header p, body h2, body p {
     text-shadow: 0px 0px 10px #00f2ff;
 }
 
-/* ===============================
-   🔹 Navbar Styling
-   =============================== */
+/* Navbar */
 .navbar {
-    background: rgba(0, 0, 0, 0.9); /* Dark Transparent */
+    background: rgba(0, 0, 0, 0.9); 
     box-shadow: 0px 0px 15px #00f2ff;
     border-bottom: 2px solid #00f2ff;
 }
@@ -40,9 +34,7 @@ header h1, header p, body h2, body p {
     color: #ff007f !important;
 }
 
-/* ===============================
-   🔹 Buttons
-   =============================== */
+/* Botones */
 .btn-primary {
     background: #00f2ff;
     border: none;
@@ -55,9 +47,7 @@ header h1, header p, body h2, body p {
     box-shadow: 0px 0px 20px #ff007f;
 }
 
-/* ===============================
-   🔹 Cards
-   =============================== */
+/* Tarjetas */
 .card {
     background: rgba(15, 15, 30, 0.9);
     border: 1px solid #00f2ff;
@@ -69,20 +59,17 @@ header h1, header p, body h2, body p {
     box-shadow: 0px 0px 25px #ff007f;
 }
 
-/* 🔹 Fix Card Description Size */
 .card-text {
-    font-size: 1rem !important; /* Make text smaller */
-    color: #d1d1d1 !important; /* Ensure readability */
+    font-size: 1rem !important; 
+    color: #d1d1d1 !important;
 }
 
 .card-title {
-    font-size: 1.2rem !important; /* Keep title a bit larger */
+    font-size: 1.2rem !important; 
     color: #00f2ff !important;
 }
 
-/* ===============================
-   🔹 Accordion Styling (Cyberpunk)
-   =============================== */
+/* Accordion */
 .accordion {
     background: rgba(0, 0, 0, 0.9) !important;
     border-radius: 10px;
@@ -109,11 +96,9 @@ header h1, header p, body h2, body p {
     border: 1px solid #00f2ff !important;
 }
 
-/* ===============================
-   🔹 Newsletter Section (Fixing Blue Background)
-   =============================== */
+/* Newsletter */
 .newsletter {
-    background: rgba(0, 0, 0, 0.9); /* Dark Instead of Bright Blue */
+    background: rgba(0, 0, 0, 0.9); 
     padding: 40px;
     text-align: center;
     box-shadow: 0px 0px 15px #00f2ff;
@@ -142,16 +127,14 @@ header h1, header p, body h2, body p {
     box-shadow: 0px 0px 15px #ff007f;
 }
 
-/* ===============================
-   🔹 Contact Section Fixes
-   =============================== */
+/* Contacto */
 .contact-info h2 {
-    font-size: 1.5rem !important; /* Reduce title size */
-    text-shadow: 0px 0px 5px #00f2ff; /* Subtle glow */
+    font-size: 1.5rem !important;
+    text-shadow: 0px 0px 5px #00f2ff; 
 }
 
 .contact-info p {
-    font-size: 1rem !important; /* Standard paragraph size */
+    font-size: 1rem !important; 
     color: #d1d1d1 !important;
 }
 
@@ -166,9 +149,8 @@ header h1, header p, body h2, body p {
     text-shadow: 0px 0px 10px #ff007f;
 }
 
-/* 🔹 Fix Button Sizes */
 .contact-info .btn {
-    font-size: 0.9rem !important; /* Smaller buttons */
+    font-size: 0.9rem !important;
     padding: 8px 15px !important;
     border-radius: 8px !important;
     background: rgba(0, 0, 0, 0.8);
@@ -183,19 +165,17 @@ header h1, header p, body h2, body p {
     box-shadow: 0px 0px 15px #ff007f;
 }
 
-/* ===============================
-   🔹 Footer Styling Fixes
-   =============================== */
+/* Footer */
 footer {
     background: rgba(0, 0, 0, 0.9) !important;
     text-shadow: 0px 0px 10px #00f2ff;
     box-shadow: 0px 0px 20px #00f2ff;
     padding: 20px;
-    font-size: 1rem !important; /* Prevents inheriting large text */
+    font-size: 1rem !important;
     text-align: center;
 }
 
 footer p, footer a {
-    font-size: 1rem !important; /* Ensure consistent size */
+    font-size: 1rem !important;
     color: #00f2ff !important;
 }
