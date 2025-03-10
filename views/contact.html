@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<header class="text-center py-5">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead text-light">Have questions or need help? Reach out to us!</p>
+    </div>
+</header>
+
+<!-- Contact Form Section -->
+<section class="container my-5">
+    <h2 class="text-center">Send Us a Message</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label text-light">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label text-light">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label text-light">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+
+<!-- Additional Contact Info -->
+<section class="container text-center my-5 contact-info">
+    <h2>Other Ways to Contact Us</h2>
+    <p>Email: <a href="mailto:support@phishingawareness.com">support@phishingawareness.com</a></p>
+    <p>Follow us on social media:</p>
+    <a href="#" class="btn btn-dark m-2">Instagram</a>
+    <a href="#" class="btn btn-dark m-2">Facebook</a>
+    <a href="#" class="btn btn-dark m-2">LinkedIn</a>
+</section>
+{% endblock %}
