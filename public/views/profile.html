@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/css/style_profile.css">
+</head>
+<body class="bg-dark text-light">
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 card-profile">
+        <h2 class="text-center text-light mb-4">User Profile</h2>
+        <div id="profile-details" class="mb-4 p-3 border border-info rounded bg-black">
+          <!-- JS will populate this -->
+        </div>
+        <form id="update-form" class="mb-4">
+          <div class="mb-3">
+            <label for="email" class="form-label text-light">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone_number" class="form-label text-light">Phone Number</label>
+            <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+          </div>
+          <div class="mb-3">
+            <label for="job" class="form-label text-light">Job</label>
+            <input type="text" class="form-control" id="job" name="job" required>
+          </div>
+          <div class="mb-3">
+            <label for="country" class="form-label text-light">Country</label>
+            <input type="text" class="form-control" id="country" name="country" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+        </form>
+        <hr class="my-4 border-danger">
+        <div class="text-center">
+          <h5 class="text-danger mb-3">Danger Zone</h5>
+          <button id="delete-account" class="btn btn-danger">Delete My Account</button>
+        </div>
+        <div id="update-result" class="text-center mb-3"></div>
+        <div class="text-center">
+          <a href="/views/index.html" class="btn btn-outline-info">Return to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light text-center py-3 border-top">
+    <p>&copy; 2025 Phishing Awareness | <a href="/views/contact.html" class="text-light">Contact Us</a></p>
+  </footer>
+<script src="/js/update_user.js"></script>
+<script src="/js/delete_user.js"></script>
+</body>
+</html>
