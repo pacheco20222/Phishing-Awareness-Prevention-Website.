@@ -1,10 +1,17 @@
+// Handles user signup and 2FA setup.
+// Sends user registration data to backend and displays a QR code and secret on success.
+// Used in signup.html and communicates with /api/auth/signup.
+
+// Wait for the DOM to be fully loaded before attaching event listeners
 document.addEventListener('DOMContentLoaded', () => {
+  // Reference the signup form and the result display container
   const form = document.getElementById('signup-form');
   const resultContainer = document.getElementById('result');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    // Collect form data from the input fields
     const formData = {
       name: form.name.value,
       second_name: form.second_name.value,
@@ -17,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       job: form.job.value
     };
 
+    // Send a POST request with the form data to the backend
     try {
       const response = await fetch('http://localhost:3000/api/auth/signup', {
         method: 'POST',
@@ -28,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const data = await response.json();
 
+      // On success, show success message and 2FA QR code + secret
       if (response.ok) {
         resultContainer.innerHTML = `
           <p class="text-success"> ${data.msg}</p>
@@ -37,9 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="/views/login.html" class="btn btn-success mt-3">Go to Login</a>
         `;
       } else {
+        // Display any error messages returned from the server
         resultContainer.innerHTML = `<p class="text-danger"> ${data.msg || 'Signup failed.'}</p>`;
       }
     } catch (error) {
+      // Handle any unexpected errors such as network issues
       console.error('Signup error:', error);
       resultContainer.innerHTML = `<p class="text-danger"> An error occurred. Please try again later.</p>`;
     }

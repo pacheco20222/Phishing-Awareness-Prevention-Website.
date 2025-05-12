@@ -1,11 +1,19 @@
+// Script for displaying and updating user profile information.
+// Fetches the current user's data and populates the form.
+// Submits updates to the backend using a PUT request and handles the result.
+// Requires the user to be authenticated with a valid token.
+
 document.addEventListener("DOMContentLoaded", () => {
+  // Get the authentication token from localStorage
   const token = localStorage.getItem('token');
 
+  // Redirect to login page if token is not found
   if (!token) {
     window.location.href = "/views/login.html";
     return;
   }
 
+  // Fetch current user profile data and populate the page and form fields
   fetch("http://localhost:3000/api/auth/profile", {
     headers: { Authorization: `Bearer ${token}` }
   })
@@ -28,9 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById('country').value = user.country;
     });
 
+  // Attach submit handler to the update form
   document.getElementById('update-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const user = JSON.parse(localStorage.getItem('user'));
+
+    // Collect updated user data from the form fields
     const updateData = {
       email: document.getElementById('email').value,
       phone_number: document.getElementById('phone_number').value,
@@ -38,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       country: document.getElementById('country').value
     };
 
+    // Send updated data to backend using a PUT request
     const res = await fetch(`http://localhost:3000/api/auth/update/${user._id}`, {
       method: 'PUT',
       headers: {
@@ -51,11 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = result.msg || 'Update failed.';
     document.getElementById('update-result').textContent = message;
 
+    // If update is successful, refresh localStorage and reload the page
     if (res.ok) {
       localStorage.setItem('user', JSON.stringify(result.user));
       setTimeout(() => {
         location.reload();
       }, 800);
+    }
+    // Handle failed update attempts
+    else {
+      // You can add additional error handling here if needed
     }
   });
 });

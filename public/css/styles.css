@@ -179,3 +179,35 @@ footer p, footer a {
     font-size: 1rem !important;
     color: #00f2ff !important;
 }
+
+/* New Features Alert */
+.new-features-alert {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1100px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 15px #00f2ff;
+    border: 1px solid #00f2ff;
+    border-radius: 10px;
+    color: #d1d1d1;
+}
+
+.new-features-alert h4 {
+    color: #00f2ff;
+    text-shadow: 0px 0px 8px #00f2ff;
+    margin-bottom: 20px;
+}
+
+.new-features-alert a {
+    color: #00f2ff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.new-features-alert a:hover {
+    color: #ff007f;
+    text-shadow: 0px 0px 10px #ff007f;
+}
